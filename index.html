@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Static Template</title>
+    <meta class="CryptoPluginExtensionLoaded" content="1.0.2">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="weather container border border-secondary border-2 rounded p-4">
+        <div class="row">
+            <div class="col">
+                <small>Results for <span id="resultsFor">Freudenstadt</span></small>
+            </div>
+            <div class="col-auto">
+                <small>
+                    <a class="me-3" href="">Kyiv</a>
+                    <a class="me-3" href="">Berlin</a>
+                    <a class="me-3" href="">Tel Aviv</a>
+                    <a class="me-3" href="">London</a>
+                </small>
+            </div>
+        </div>
+
+        <form id="citySearch" class="row align-items-stretch my-5">
+            <div class="col pe-1">
+                <input type="text" class="form-control" id="City" placeholder="Enter a city">
+            </div>
+
+            <div class="col-auto ps-0">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+
+            <div class="col-auto">
+                <button id="currentLocation" type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-location-crosshairs"></i> Current location
+                </button>
+            </div>
+        </form>
+
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 id="cityNow" class="mb-1">Freudenstadt</h2>
+                <p>
+                    <span id="timeNow">Tuesday 19:29</span><br>
+                    Clouds
+                </p>
+            </div>
+            <div class="col text-nowrap">
+                <i class="fa-solid fa-cloud weather-today text-primary text-opacity-50 me-3"></i>
+                <span class="temperature-today">
+                    <span id="temperatureValue">+13</span>
+                    <span class="temperature-unit">
+                        <a id="temperatureCelsius" href="#">°C</a> |
+                        <a id="temperatureFahrenheit" href="#">°F</a>
+                    </span>
+                </span>
+            </div>
+            <div class="col-auto">
+                <ul class="list-unstyled text-secondary text-end">
+                    <li class="small">Precipitation: 47%</li>
+                    <li class="small">Humidity: 70%</li>
+                    <li class="small">Wind: 11 km/h</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row weather-next my-3">
+            <div class="col text-center">
+                <div class="week-day">Mon</div>
+                <i class="fa-solid fa-cloud-rain"></i>
+                <span class="temperature-next">+13°</span>
+            </div>
+            <div class="col text-center">
+                <div class="week-day">Tue</div>
+                <i class="fa-solid fa-cloud-bolt"></i>
+                <span class="temperature-next">+13°</span>
+            </div>
+            <div class="col text-center">
+                <div class="week-day">Wed</div>
+                <i class="fa-solid fa-cloud"></i>
+                <span class="temperature-next">+13°</span>
+            </div>
+            <div class="col text-center">
+                <div class="week-day">Thu</div>
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span class="temperature-next">+13°</span>
+            </div>
+            <div class="col text-center">
+                <div class="week-day">Fri</div>
+                <i class="fa-solid fa-sun"></i>
+                <span class="temperature-next">+13°</span>
+            </div>
+        </div>
+    </div>
+    <script src="src/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e60d8ed06d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
