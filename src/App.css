@@ -1,0 +1,16 @@
+.weather {
+  border-color: #959595;
+  max-width: 700px;
+  min-height: 580px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.error {
+  color: crimson;
+  font-weight: 300;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}

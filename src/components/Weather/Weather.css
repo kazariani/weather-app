@@ -1,0 +1,9 @@
+.weather-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.weather-feelslike {
+	display: inline-block;
+	min-width: 2.125rem;
+}

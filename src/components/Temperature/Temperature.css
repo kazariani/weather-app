@@ -1,0 +1,26 @@
+.temperature-today {
+	display: inline-block;
+	font-size: 4rem;
+	line-height: 1;
+	vertical-align: middle;
+}
+
+.temperature-value {
+	display: inline-block;
+	min-width: 5.25rem;
+}
+
+.temperature-unit {
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 0.5rem;
+	min-width: 3.25rem;
+	vertical-align: text-top;
+}
+
+.temperature-unit_toggle {
+	color: #1E8AE7;
+	cursor: pointer;
+}
